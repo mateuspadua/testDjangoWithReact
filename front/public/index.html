@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <link rel="stylesheet" href="css/w3-css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+     <script>
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+      }
+      function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+      }
+    </script>
+
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <script type="text/javascript">
+  //carrega o pacote dos gráficos
+  google.charts.load('current', {'packages':['corechart']});
+
+  //define a função para criar o gráfico
+  function drawChart() {
+    // as cores do gráfico serão geradas automaticamente
+    var data = google.visualization.arrayToDataTable([
+      ['Filme', 'Bilheteria'],
+      ['Star Wars I',     10,],
+      ['Star Wars II',     10, ],
+      ['Star Wars III',      10, ],
+      ['Star Wars VII',  40, ],
+      ['Star Wars Rogue One', 30,]
+    ]);
+    // criar a variavel options para definir as opções do gráfico
+    var options = {
+      legend: {position: 'labeled',
+      chartArea:{width:"100%",height:"100%"}
+    }
+      //is3D:true, // define que o gráfico em 3d estando setado como true
+
+    };
+    //aloca o tipo de gráfico na div GraficoColunas
+var chart = new google.visualization.PieChart(document.getElementById('GraficoPizza'));
+    chart.draw(data, options);
+  }
+
+  //carrega o grafico na página
+  google.charts.setOnLoadCallback(drawChart);
+
+</script>
+
+</html>

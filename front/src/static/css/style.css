@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700');
+
+*{
+  margin: 0px;
+  padding-top: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 8pt;
+
+}
+
+body{
+  background-color: #eee;
+}
+
+#side-menu{
+  height: 100%;
+  background-color: #191E2B;
+  color: #4B5160;
+}
+
+.side-menu-img{
+  padding-bottom: 8px;
+  padding-top: 20px;
+}
+
+#top-menu{
+  height: 60px;
+  background-color: #fff;
+  color: #4B5160;
+
+}
+
+.top-menu-conteudo{
+  float: right;
+  padding-right: 20px; 
+}
+
+.top-menu{
+  padding-left: 20px;
+}
+
+.perfil1{
+  border-left: 1px solid;
+  color: #E3E3E3;
+}
+
+.perfil2{
+  border-right: 1px solid;
+  color: #E3E3E3;
+}
+
+
+.top-menu2{
+ 
+  padding-top: 20px;
+  background-color: #E3E3E3;
+  height: 70px;
+  color: #333333;
+}
+
+.top-menu2 h2{
+  margin-top: 6px;
+  margin-left: 30px;
+  font-size: 20px;
+  line-height: 5px;
+}
+.top-menu2 p {
+  font-size: 13px;
+  margin-left: 30px;
+}
+
+.contenido{
+  
+}
+
+.boxes{
+  padding-left: 15px;
+  margin-top: 20px;
+  padding-top: 10px;
+  background-color: #fff;
+  height: 80px;
+}
+
+.boxes h2 {
+  color: #E9A81E;
+  font-weight: bold;
+  line-height: 0.5;
+
+}
+
+.boxes p {
+  color: #111;
+  font-size: 16px;
+}
+
+.img-boxes{
+  padding-top: 20px;
+ }
+
+ .chart{
+  margin-top: 20px;
+  background-color: #fff;
+  height: 322px;
+
+}
+
+.chart p {
+  padding-top: 10px;
+  margin-left: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4B5160;
+
+}
+
+.borda {
+  margin-top: 20px;
+  margin-left: 160px;
+  position: fixed;
+  background-color: #eee;
+  width: 1px;
+  height: 40px;
+}
+
+#fichadospersonagens{
+  margin-top: 15px;
+  height: 200px;
+}
+
+.tabelinha{
+  width: 100%;
+  margin-top: 15px;
+  color: #6A6A6A;
+}
+
+.orangerow {
+  text-align: left;
+  text-decoration: underline;
+  color: #E9A81E;
+}
+
+.tabelinha th {
+  font-weight: bold;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #E3E3E3;
+  line-height: 30px;
+  text-align: center;
+}
+
+.tabelinha td {
+  line-height: 25px;
+  text-align: center;
+}
+
+
+.tabela {
+  background-color: #fff;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  
+  background-color: #fff;
+  height: 100%;
+  font-size: 13px;
+}
+
+.tabela p {
+  padding-top: 12px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #4B5160;
+}
+
+@media only screen and (max-width: 1200px) {
+    .boxes {
+      height: 120px;
+    }
+
+}
+
+@media only screen and (max-width: 1130px) {
+    .boxes {
+      height: 80px;
+    }
+
+    .chart{
+      width: 600px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 678px) {
+    .boxes {
+      height: 80px;
+      width: 100%;
+    }
+
+    .fichadospersonagens{
+      padding-bottom: 50px;
+      width: 400px;
+    }
+
+    .tabela{
+      width: 400px;
+      height: 280px;
+      padding-bottom: 40px;
+      margin-bottom: 20px;
+    }
+
+    .chart{
+      margin-top: 100px;
+      width: 400px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #top-menu{
+      width: 100%;
+    }
+
+    .boxes {
+      width: 350px;
+    }
+
+   .tabela{
+      width: 360px;
+      height: 280px;
+      padding-bottom: 40px;
+      margin-bottom: 20px;
+    }
+
+    .chart{
+      width: 350px;
+    }
+
+}
+
+@media only screen and (max-width: 300px) {
+    .boxes {
+      height: 80px;
+    }
+
+    .tabela{
+      width: 300px;
+      height: 280px;
+      padding-bottom: 40px;
+      margin-bottom: 20px;
+    }
+
+    .chart{
+      width: 100%;
+    }
+
+}
+
+.table-peoples{
+  text-align: "left";
+}
+
+.graficpizza2{
+  height:"250px";
+}
+
+.side-max{
+  width:170px;
+ 
+}
+
+.text-lefth{
+  text-align:left;
+}
+
+.colorfff{
+  color:"#fff";
+}
+
+.hr-side{
+  color: "#242B3E";
+  width: "80%";
+}
+.side-title{
+  color:"#fff";
+}
+
+.margecont{
+  color: #E9A81E;
+}
+
+.hr-color{
+  color:"#242B3E";
+}
