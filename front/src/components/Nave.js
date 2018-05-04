@@ -32,4 +32,4 @@ class Nave extends Component{
     }
 }
 
-export default Naves
+export default Nave

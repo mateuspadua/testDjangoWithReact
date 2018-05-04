@@ -3,7 +3,7 @@ import '../static/css/bootstrap.css'
 import '../static/css/w3-css.css'
 import '../static/css/style.css'
 
-import Nave from '../components/Naves'
+import Nave from '../components/Nave'
 import Personagem from '../components/Personagem'
 
 import navesimg from '../static/img/naves.png'
