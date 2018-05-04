@@ -4,18 +4,19 @@ import axios from 'axios'
 import ficha from '../static/img/ficha.png'
 
 class Personagem extends Component{
-    
+
     state = {
         peoples: []
       }
-        componentDidMount() {
-            axios.get(`http://localhost:8000/v1/peoples/`)
-              .then(res => {
-                const peoples = res.data;
-                this.setState({ peoples });
-        })
-        
-    }
+
+      componentDidMount() {
+          axios.get(`http://localhost:8000/v1/peoples/`)
+            .then(res => {
+              const peoples = res.data;
+              this.setState({ peoples });
+            })
+
+      }
 
     render(){
         return(
@@ -51,9 +52,8 @@ class Personagem extends Component{
                             ))}
                         </tbody>
                     </table>
-                </div> 
+                </div>
             </div>
-
         )
     }
 }

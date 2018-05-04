@@ -25,7 +25,6 @@ class App extends Component {
     render() {
         return (
             <React.Fragment>
-
                 <div class="side-max w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left " id="mySidebar">
                     <button className="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
                     <div id="side-menu">
@@ -65,7 +64,7 @@ class App extends Component {
                                     <img src={email} className="top-menu"/>
                                     <img src={borda}alt="arrumar" className="top-menu"/>
                                     <img src={perfil} alt="arrumar" className="top-menu"/>
-                                        Luke Skywalker
+                                    Luke Skywalker
                                     <i className="fas fa-chevron-down fa-1x"></i>
                                     <img src={borda} alt="arrumar" className="top-menu"/>
                                     <img src={bars} alt="arrumar"/>
@@ -141,7 +140,6 @@ class App extends Component {
                         </div>
                     </div>
                 </div>
-
             </React.Fragment>
         );
     }
