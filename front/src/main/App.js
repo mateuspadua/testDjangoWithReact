@@ -3,7 +3,7 @@ import '../static/css/bootstrap.css'
 import '../static/css/w3-css.css'
 import '../static/css/style.css'
 
-import Naves from '../components/Naves'
+import Nave from '../components/Naves'
 import Personagem from '../components/Personagem'
 
 import navesimg from '../static/img/naves.png'
@@ -21,15 +21,11 @@ import personagens from '../static/img/personagens.png'
 import planetas from '../static/img/planetas.png'
 
 
-
-
-
 class App extends Component {
     render() {
         return (
             <React.Fragment>
-                
-               
+
                 <div class="side-max w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left " id="mySidebar">
                     <button className="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
                     <div id="side-menu">
@@ -50,17 +46,15 @@ class App extends Component {
                             <p>Naves espaciais</p>
 
                             <img src={filmes} alt="arrumar"  className="side-menu-img"/>
-                            <p>Filmes</p> 
+                            <p>Filmes</p>
                         </center>
                     </div>
                 </div>
-             
-                
+
                 <div className="w3-main" style= {{marginLeft : 170}}>
                     <div class="w3-teal">
                     <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
                     </div>
-
 
                     <div id="top-menu">
                         <nav>
@@ -80,7 +74,6 @@ class App extends Component {
                             </div>
                         </nav>
                     </div>
-
 
                     <div className="top-menu2">
                         <h2>Dashboard</h2>
@@ -128,15 +121,13 @@ class App extends Component {
                             </div>
 
                             <div className="col-md-4s">
-                                <Naves/>
-                            </div>	
+                                <Nave/>
+                            </div>
 
-
-                                
                             <div className="col-md-12 ">
                                 <Personagem/>
-                            </div> 
-                        </div>  
+                            </div>
+                        </div>
 
                         <div className="col-md-4">
                             <div className="chart">
@@ -148,13 +139,12 @@ class App extends Component {
                                 <div className="graficpizza2" id="GraficoPizza"></div>
                             </div>
                         </div>
-                    </div>  
-                </div>   
-                   
-                         
-            </React.Fragment>       
+                    </div>
+                </div>
+
+            </React.Fragment>
         );
     }
 }
 
-export default App;         
+export default App;
